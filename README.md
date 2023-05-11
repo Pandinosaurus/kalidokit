@@ -7,11 +7,16 @@
 [![Website][website]][website-url]
 [![Discord Shield][discord]][discord-url]
 
+| :exclamation: KalidoKit is now officially deprecated and solutions will be directly integrated into [MediaPipe](https://mediapipe-studio.webapps.google.com/demo/face_landmarker) :exclamation:| 
+|--------------------------------------|
+
 ## Face, Pose, and Hand Tracking Calculator
 
 Kalidokit is a blendshape and kinematics solver for Mediapipe/Tensorflow.js face, eyes, pose, and hand tracking models, compatible with [Facemesh](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection), [Blazepose](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection), [Handpose](https://google.github.io/mediapipe/solutions/hands.html), and [Holistic](https://google.github.io/mediapipe/solutions/holistic.html). It takes predicted 3D landmarks and calculates simple euler rotations and blendshape face values.
 
 As the core to Vtuber web apps, [Kalidoface](https://kalidoface.com) and [Kalidoface 3D](https://3d.kalidoface.com), KalidoKit is designed specifically for rigging 3D VRM models and Live2D avatars!
+
+NOTE: This is a JS library meant for developers using Mediapipe pretrained models and not a complete app by itself. Please visit [Kalidoface](https://kalidoface.com) for the full vtuber experience 😉!
 
 <a href="https://glitch.com/edit/#!/kalidokit"><img src="https://github.com/yeemachine/kalidokit/blob/main/docs/kalidokit_glitch.gif?raw=true" alt="Kalidokit Template" width="48%"/></a>
 <a href="https://glitch.com/edit/#!/kalidokit-live2d"><img src="https://github.com/yeemachine/kalidokit/blob/main/docs/kalidokit-live2d_glitch.gif?raw=true" alt="Kalidokit Template" width="48%"/></a>
@@ -108,6 +113,7 @@ This demo uses Mediapipe FaceMesh for face tracking, Pixi.js + pixi-live2d-displ
 Interested in contributing? If you clone this project, the `docs` folder includes both VRM and Live2D KalidoKit templates. Run the `test` script to build the library and start up the dev server. The VRM demo will be hosted on `localhost:3000` and Live2D on `localhost:3000/live2d/`.
 
 ```
+npm install
 npm run test
 ```
 
@@ -274,4 +280,4 @@ The current library is a work in progress and contributions to improve it are ve
 [npm-downloads]: https://img.shields.io/npm/dw/kalidokit
 [npmtrends-url]: https://www.npmtrends.com/kalidokit
 [discord]: https://discordapp.com/api/guilds/869435838746984468/widget.png?style=shield
-[discord-url]: https://discord.gg/H8RJvNwx
+[discord-url]: https://discord.gg/XMqdfzVZ2E
